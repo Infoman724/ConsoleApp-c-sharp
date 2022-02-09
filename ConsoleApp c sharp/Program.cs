@@ -258,13 +258,22 @@ namespace ConsoleApp_c_sharp
                             Console.WriteLine($"{cena}" + sai);
                         }
                         Console.WriteLine(cena);
-
-
-
-
-
                     }
                     
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 }
 
 
