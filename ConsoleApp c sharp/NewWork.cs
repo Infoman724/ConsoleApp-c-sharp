@@ -10,7 +10,7 @@ namespace ConsoleApp_c_sharp
     class NewWork
     {
         static void Main(string[] args)
-        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5");
+        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5,6");
             string vastus = Console.ReadLine();
             while (true)
             {
@@ -93,9 +93,100 @@ namespace ConsoleApp_c_sharp
                     Console.Write($"Summa={summa,4}");
                     Console.Write($"korrutis={korrutis,4}");
                     Console.Write($"Keskmine={summa/arvudd.Length,4}");
-                    
-                   
+                }
+                else if (vastus=="4")//osta elevant выглядит правильно но почему-то не работает скорее всего здесь какято элементарнейшая ошибка
+                {
+                    string vastvast = Console.ReadLine();
+                    while (true)
+                    {
+                        Console.WriteLine("Osta elevant!");
+                        Console.ReadLine();
+                        if (vastvast == "elevant")
+                        {
+                            Console.WriteLine("Sis hästi");
+                            break;
+                        }
 
+
+
+
+                    }
+                }
+                else if (vastus=="5")
+                {
+                    Random rnd = new Random();
+                    int[] arvud = new int[1];
+                    for (int i = 0; i < arvud.Length; i++)
+                    {
+                        arvud[i] = rnd.Next(1, 100);
+
+                    }
+                    foreach (int arv in arvud)
+                    {
+                        Console.Write($"{arv,4}");
+                    }
+                    //87,62,43,41,80 вот такие цифры задумал компьютер
+                }
+                else if (vastus=="6")
+                {
+                    
+                    
+                    
+                        for (int i = 1; i < 11; i++)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 2; i < 21; i+=2)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 3; i < 31; i += 3)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 4; i < 41; i += 4)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 5; i < 51; i += 5)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 6; i < 61; i += 6)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 8; i < 81; i += 8)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 9; i < 91; i += 9)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+                        for (int i = 10; i < 101; i += 10)
+                        {
+                            Console.Write(i + " ");
+                        }
+                        Console.Write("\n");
+
+
+
+
+
+
+
+
+
+                    
 
 
 
@@ -108,8 +199,19 @@ namespace ConsoleApp_c_sharp
 
 
 
+
+
+
+
+
                 Console.ReadKey();
+
             }
+
+
+
+             
+         
 
 
 
