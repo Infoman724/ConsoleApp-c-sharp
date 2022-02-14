@@ -45,7 +45,24 @@ namespace ConsoleApp_c_sharp
 
 
         }
-
+        public static void arvud_ekranile(Array massivv)
+        {
+            int k, max = 0;
+            foreach (var m in massivv)
+            {
+                k = m.ToString().Length;
+                if (k>max)
+                {
+                    max = k;
+                }
+            }
+            max++;
+            foreach (var m in massivv)
+            {
+                
+                Console.Write("{0,1}",m,max);
+            }
+        }
 
 
 

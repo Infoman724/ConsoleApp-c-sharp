@@ -18,6 +18,7 @@ namespace ConsoleApp_c_sharp
                 {
                     Array arvud;
                     arvud = Funktsioonid.arvud_massiviisse(10, false);
+                    
                     string[] nimed = new string[5] { "Sasha", "Masha", "Pasha", "Igor", "David" };
                     int a = 0;
                     do
@@ -67,7 +68,7 @@ namespace ConsoleApp_c_sharp
                 {
                     Array arvudd;
                     arvudd = Funktsioonid.arvud_massiviisse(5, true);
-                    
+                    Funktsioonid.arvud_ekranile(arvudd);
                     int summa = 0;
                     int korrutis = 1;
                     foreach (int arv in arvudd)
