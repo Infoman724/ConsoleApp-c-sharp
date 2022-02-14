@@ -104,12 +104,12 @@ namespace ConsoleApp_c_sharp
                         if (vastvast == "elevant")
                         {
                             Console.WriteLine("Sis hästi");
-                            break;
+                            
                         }
 
 
 
-
+                        break;
                     }
                 }
                 else if (vastus=="5")
@@ -186,14 +186,37 @@ namespace ConsoleApp_c_sharp
 
 
 
-                    
-
-
-
-
-
+                
+                
+                
+                
+                
                 }
-
+                else if (vastus=="7")
+                {
+                    int[] massiiv4 = new int[4];
+                    for (int i = 0; i < massiiv4.Length; i++)
+                    //andmed massivisse
+                    {
+                        massiiv4[i] = int.Parse(Console.ReadLine());
+                    }
+                    Array.Sort(massiiv4);
+                    int plus = 0;
+                    for (int t = 0; t < massiiv4.Length; t++)
+                    {
+                        plus=(int)(plus+massiiv4[t] * Math.Pow(10, t));
+                    }
+                    Console.WriteLine(plus);
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                }
 
 
 
