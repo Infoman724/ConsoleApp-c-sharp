@@ -10,23 +10,14 @@ namespace ConsoleApp_c_sharp
     class NewWork
     {
         static void Main(string[] args)
-        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5,6");
+        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5,6,7");
             string vastus = Console.ReadLine();
             while (true)
             {
                 if (vastus=="1")
                 {
-                    Random rnd = new Random();
-                    int[] arvud = new int[10];
-                    for (int i = 0; i < arvud.Length; i++)
-                    {
-                        arvud[i] = rnd.Next(1, 100);
-                    }
-
-                    foreach (int arv in arvud)
-                    {
-                        Console.Write($"{arv,4}");
-                    }
+                    Array arvud;
+                    arvud = Funktsioonid.arvud_massiviisse(10, false);
                     string[] nimed = new string[5] { "Sasha", "Masha", "Pasha", "Igor", "David" };
                     int a = 0;
                     do
@@ -74,14 +65,9 @@ namespace ConsoleApp_c_sharp
                 }
                 else if (vastus=="3")
                 {
-
-                    int[] arvudd = new int[5];
-                    for (int i = 0; i < arvudd.Length; i++)
-                        //andmed massivisse
-                    {
-                        arvudd[i] = int.Parse(Console.ReadLine());
-                    }
-                    //massiv ekrannile
+                    Array arvudd;
+                    arvudd = Funktsioonid.arvud_massiviisse(5, true);
+                    
                     int summa = 0;
                     int korrutis = 1;
                     foreach (int arv in arvudd)
@@ -194,30 +180,32 @@ namespace ConsoleApp_c_sharp
                 }
                 else if (vastus=="7")
                 {
-                    int[] massiiv4 = new int[4];
+                    Array massiiv4 = Funktsioonid.arvud_massiviisse(4, true);
+                    /*int[] massiiv4 = new int[4];
                     for (int i = 0; i < massiiv4.Length; i++)
                     //andmed massivisse
                     {
                         massiiv4[i] = int.Parse(Console.ReadLine());
                     }
+                    */
                     Array.Sort(massiiv4);
+                    int D = 0;
+                    int t = 0;
                     int plus = 0;
-                    for (int t = 0; t < massiiv4.Length; t++)
+                    foreach(int item in massiiv4)
                     {
-                        plus=(int)(plus+massiiv4[t] * Math.Pow(10, t));
+                        D=(int)(D+item *Math.Pow(10,t));
+                        t++;
                     }
                     Console.WriteLine(plus);
                 
-                
-                
-                
-                
-                
-                
-                
-                
                 }
-
+                else if (vastus=="8")
+                {
+                    int q = 10;
+                    int korrutis = Funktsioonid.korrutamine(q, 5);
+                    Console.WriteLine(korrutis);
+                }
 
 
 
