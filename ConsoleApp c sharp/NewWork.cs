@@ -10,7 +10,7 @@ namespace ConsoleApp_c_sharp
     class NewWork
     {
         static void Main(string[] args)
-        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5,6,7");
+        {   Console.WriteLine("kakuyu programu proverjaem? 1,2,3,4,5,6,7,dz1");
             string vastus = Console.ReadLine();
             while (true)
             {
@@ -207,7 +207,10 @@ namespace ConsoleApp_c_sharp
                     int korrutis = Funktsioonid.korrutamine(q, 5);
                     Console.WriteLine(korrutis);
                 }
-
+                else if (vastus=="dz1")
+                {
+                    Console.WriteLine(Funktsioonid.keskmine(4));
+                }
 
 
 

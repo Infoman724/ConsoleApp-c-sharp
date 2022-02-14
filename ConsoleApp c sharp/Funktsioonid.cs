@@ -8,12 +8,12 @@ namespace ConsoleApp_c_sharp
 {
     class Funktsioonid
     {
-        public static int korrutamine(int arv1,int arv2)
+        public static int korrutamine(int arv1, int arv2)
         {
             int kor = arv1 * arv2;
             return kor;
         }
-        public static int[] arvud_massiviisse(int n,bool t_f)
+        public static int[] arvud_massiviisse(int n, bool t_f)
         {
             Random rnd = new Random();
             int[] mass = new int[n];
@@ -22,7 +22,7 @@ namespace ConsoleApp_c_sharp
                 if (t_f)
                 {
                     int output;
-                    string input=Console.ReadLine();
+                    string input = Console.ReadLine();
                     if (int.TryParse(input, out output))
                     {
                         mass[i] = output;
@@ -37,9 +37,9 @@ namespace ConsoleApp_c_sharp
                 {
                     mass[i] = rnd.Next(1, 100);
                 }
-            
-            
-            
+
+
+
             }
             return mass;
 
@@ -51,7 +51,7 @@ namespace ConsoleApp_c_sharp
             foreach (var m in massivv)
             {
                 k = m.ToString().Length;
-                if (k>max)
+                if (k > max)
                 {
                     max = k;
                 }
@@ -59,11 +59,32 @@ namespace ConsoleApp_c_sharp
             max++;
             foreach (var m in massivv)
             {
-                
-                Console.Write("{0,1}",m,max);
+
+                Console.Write("{0,1}", m, max);
             }
         }
 
+
+        public static double keskmine(int n)
+        {
+            double[] arvud = new double[n];
+            double kesk=0;
+            for (int i = 0; i < n; i++)
+            {
+                arvud[i] = int.Parse(Console.ReadLine());
+                
+            }
+            foreach (double item in arvud)
+            {
+                kesk = kesk + item;
+            }
+            kesk =Math.Round( kesk / n,4);
+            return kesk;
+        
+        
+        
+        }
+        
 
 
 
