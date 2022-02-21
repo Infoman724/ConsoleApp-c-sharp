@@ -68,22 +68,33 @@ namespace ConsoleApp_c_sharp
         public static double keskmine(int n)
         {
             double[] arvud = new double[n];
-            double kesk=0;
+            double kesk = 0;
             for (int i = 0; i < n; i++)
             {
                 arvud[i] = int.Parse(Console.ReadLine());
-                
+
             }
             foreach (double item in arvud)
             {
                 kesk = kesk + item;
             }
-            kesk =Math.Round( kesk / n,4);
+            kesk = Math.Round(kesk / n, 4);
             return kesk;
-        
-        
-        
+
+
+
         }
+
+        public static void tahe(int arv)
+        {
+            for (int i = 0; i < arv; i++)
+            {
+                Console.Write("*");
+            }
+
+        }
+    }
+} 
         
 
 
@@ -91,8 +102,12 @@ namespace ConsoleApp_c_sharp
 
 
 
-
-    }
+    
+    
+    
+    
+    
+    
     
 
 
@@ -103,4 +118,4 @@ namespace ConsoleApp_c_sharp
 
 
 
-}
+

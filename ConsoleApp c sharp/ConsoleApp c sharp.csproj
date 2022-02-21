@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_c_sharp.NewWork</StartupObject>
+    <StartupObject>ConsoleApp_c_sharp.Lists_dict_kolekts</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Funktsioonid.cs" />
+    <Compile Include="Lists_dict_kolekts.cs" />
     <Compile Include="NewWork.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
